@@ -1,0 +1,94 @@
+@import "tailwindcss";
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.gradient-nav .nav-glow {
+  background: linear-gradient(to bottom right, #f472b6, #8b5cf6); /* pink-400 to purple-500 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Already existing styles below */
+.nav-glow {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: color 0.3s ease;
+  z-index: 0;
+}
+
+.nav-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #ec4899, #8b5cf6, #ec4899);
+  background-size: 400% 400%;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  animation: glowMove 5s linear infinite;
+}
+
+.nav-glow:hover::before {
+  opacity: 1;
+}
+
+@keyframes glowMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
