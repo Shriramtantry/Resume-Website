@@ -257,7 +257,7 @@ function App() {
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
-                <a href="#" className="text-2xl font-bold text-[var(--color-text-primary)]">Shriram Tantry.</a>
+                <a href="#" className="text-2xl font-bold text-[var(--color-text-primary)]">ST</a>
                 <div className="hidden md:flex items-center gap-x-1">
                     {navLinks.map(item => (
                         <a key={item} href={`#${item.toLowerCase()}`} className="px-4 py-2 rounded-md text-[var(--color-text-secondary)] font-medium hover:bg-[var(--color-bg-tertiary)] hover:text-blue-500 transition-all duration-200">
@@ -332,7 +332,7 @@ function App() {
                 <div className="p-8 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)] shadow-xl">
                   <h3 className="text-lg font-bold text-[var(--color-text-primary)]">Core Mission</h3>
                   <p className="mt-2 text-[var(--color-text-secondary)]">To create practical, technology-driven solutions by combining the principles of hardware engineering and modern software development.</p>
-                  <a href="/Akshara_resume.pdf" download className="inline-block w-full text-center mt-6 px-6 py-3 bg-slate-800 text-white font-bold rounded-lg hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 transition-colors">Download Resume</a>
+                  <a href="/resume.pdf" download className="inline-block w-full text-center mt-6 px-6 py-3 bg-slate-800 text-white font-bold rounded-lg hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 transition-colors">Download Resume</a>
                 </div>
               </div>
             </div>
